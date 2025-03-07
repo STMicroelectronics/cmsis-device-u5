@@ -2179,7 +2179,7 @@ typedef struct
 #define RAMCFG_BKPRAM_BASE_S    (RAMCFG_BASE_S + 0x0100UL)
 #define RAMCFG_SRAM5_BASE_S     (RAMCFG_BASE_S + 0x0140UL)
 #define RAMCFG_SRAM6_BASE_S     (RAMCFG_BASE_S + 0x0180UL)
-#define JPEG_BASE_S             (AHB1PERIPH_BASE_S + 0x0A00UL)
+#define JPEG_BASE_S             (AHB1PERIPH_BASE_S + 0x0A000UL)
 #define DMA2D_BASE_S            (AHB1PERIPH_BASE_S + 0x0B000UL)
 #define GFXMMU_BASE_S           (AHB1PERIPH_BASE_S + 0x0C000UL)
 #define GPU2D_BASE_S            (AHB1PERIPH_BASE_S + 0x0F000UL)
@@ -11353,10 +11353,10 @@ typedef struct
 #define JPEG_SR_COF                     JPEG_SR_COF_Msk                        /*!<JPEG Codec operation on going flag */
 
 /********************  Bit definition for CFR register  ********************/
-#define JPEG_CFR_CEOCF_Pos              (4U)
+#define JPEG_CFR_CEOCF_Pos              (5U)
 #define JPEG_CFR_CEOCF_Msk              (0x1UL << JPEG_CFR_CEOCF_Pos)          /*!< 0x00000010 */
 #define JPEG_CFR_CEOCF                  JPEG_CFR_CEOCF_Msk                     /*!<Clear End of Conversion Flag */
-#define JPEG_CFR_CHPDF_Pos              (5U)
+#define JPEG_CFR_CHPDF_Pos              (6U)
 #define JPEG_CFR_CHPDF_Msk              (0x1UL << JPEG_CFR_CHPDF_Pos)          /*!< 0x00000020 */
 #define JPEG_CFR_CHPDF                  JPEG_CFR_CHPDF_Msk                     /*!<Clear Header Parsing Done Flag */
 
