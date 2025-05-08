@@ -5558,23 +5558,25 @@ typedef struct
 #define HASH_SR_BUSY_Pos                    (3U)
 #define HASH_SR_BUSY_Msk                    (0x1UL << HASH_SR_BUSY_Pos)             /*!< 0x00000008 */
 #define HASH_SR_BUSY                        HASH_SR_BUSY_Msk
-#define HASH_SR_NBWE_Pos                    (16U)
-#define HASH_SR_NBWE_Msk                    (0xFUL << HASH_SR_NBWE_Pos)             /*!< 0x000F0000 */
-#define HASH_SR_NBWE                        HASH_SR_NBWE_Msk
-#define HASH_SR_NBWE_0                      (0x01UL << HASH_SR_NBWE_Pos)            /*!< 0x00010000 */
-#define HASH_SR_NBWE_1                      (0x02UL << HASH_SR_NBWE_Pos)            /*!< 0x00020000 */
-#define HASH_SR_NBWE_2                      (0x04UL << HASH_SR_NBWE_Pos)            /*!< 0x00040000 */
-#define HASH_SR_NBWE_3                      (0x08UL << HASH_SR_NBWE_Pos)            /*!< 0x00080000 */
-#define HASH_SR_DINNE_Pos                   (15U)
-#define HASH_SR_DINNE_Msk                   (0x1UL << HASH_SR_DINNE_Pos)            /*!< 0x00008000 */
-#define HASH_SR_DINNE                       HASH_SR_DINNE_Msk
 #define HASH_SR_NBWP_Pos                    (9U)
-#define HASH_SR_NBWP_Msk                    (0xFUL << HASH_SR_NBWP_Pos)             /*!< 0x000F0000 */
+#define HASH_SR_NBWP_Msk                    (0x1FUL << HASH_SR_NBWP_Pos)            /*!< 0x0001F0000 */
 #define HASH_SR_NBWP                        HASH_SR_NBWP_Msk
 #define HASH_SR_NBWP_0                      (0x01UL << HASH_SR_NBWP_Pos)            /*!< 0x000O0200 */
 #define HASH_SR_NBWP_1                      (0x02UL << HASH_SR_NBWP_Pos)            /*!< 0x00000400 */
 #define HASH_SR_NBWP_2                      (0x04UL << HASH_SR_NBWP_Pos)            /*!< 0x00000800 */
 #define HASH_SR_NBWP_3                      (0x08UL << HASH_SR_NBWP_Pos)            /*!< 0x00001000 */
+#define HASH_SR_NBWP_4                      (0x10UL << HASH_SR_NBWP_Pos)            /*!< 0x00002000 */
+#define HASH_SR_DINNE_Pos                   (15U)
+#define HASH_SR_DINNE_Msk                   (0x1UL << HASH_SR_DINNE_Pos)            /*!< 0x00008000 */
+#define HASH_SR_DINNE                       HASH_SR_DINNE_Msk
+#define HASH_SR_NBWE_Pos                    (16U)
+#define HASH_SR_NBWE_Msk                    (0x1FUL << HASH_SR_NBWE_Pos)            /*!< 0x0001F0000 */
+#define HASH_SR_NBWE                        HASH_SR_NBWE_Msk
+#define HASH_SR_NBWE_0                      (0x01UL << HASH_SR_NBWE_Pos)            /*!< 0x00010000 */
+#define HASH_SR_NBWE_1                      (0x02UL << HASH_SR_NBWE_Pos)            /*!< 0x00020000 */
+#define HASH_SR_NBWE_2                      (0x04UL << HASH_SR_NBWE_Pos)            /*!< 0x00040000 */
+#define HASH_SR_NBWE_3                      (0x08UL << HASH_SR_NBWE_Pos)            /*!< 0x00080000 */
+#define HASH_SR_NBWE_4                      (0x10UL << HASH_SR_NBWE_Pos)            /*!< 0x00100000 */
 
 /******************************************************************************/
 /*                                                                            */
