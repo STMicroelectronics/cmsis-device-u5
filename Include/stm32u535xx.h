@@ -15165,33 +15165,33 @@ typedef struct
 #define RCC_CCIPR3_LPUART1SEL_1             (0x2UL << RCC_CCIPR3_LPUART1SEL_Pos)     /*!< 0x00000002 */
 #define RCC_CCIPR3_LPUART1SEL_2             (0x4UL << RCC_CCIPR3_LPUART1SEL_Pos)     /*!< 0x00000004 */
 #define RCC_CCIPR3_SPI3SEL_Pos              (3UL)
-#define RCC_CCIPR3_SPI3SEL_Msk              (0x3UL << RCC_CCIPR3_SPI3SEL_Pos)        /*!< 0x00000008 */
+#define RCC_CCIPR3_SPI3SEL_Msk              (0x3UL << RCC_CCIPR3_SPI3SEL_Pos)        /*!< 0x00000018 */
 #define RCC_CCIPR3_SPI3SEL                  RCC_CCIPR3_SPI3SEL_Msk                   /*!< SPI3SEL[1:0]: bits (SPI3 Kernel Clock Source Selection) */
 #define RCC_CCIPR3_SPI3SEL_0                (0x1UL << RCC_CCIPR3_SPI3SEL_Pos)        /*!< 0x00000008 */
 #define RCC_CCIPR3_SPI3SEL_1                (0x2UL << RCC_CCIPR3_SPI3SEL_Pos)        /*!< 0x00000010 */
 #define RCC_CCIPR3_I2C3SEL_Pos              (6UL)
-#define RCC_CCIPR3_I2C3SEL_Msk              (0x3UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x00000300 */
+#define RCC_CCIPR3_I2C3SEL_Msk              (0x3UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x000000C0 */
 #define RCC_CCIPR3_I2C3SEL                  RCC_CCIPR3_I2C3SEL_Msk                   /*!< I2C3SEL[1:0]: bits (I2C3 Kernel Clock Source Selection) */
-#define RCC_CCIPR3_I2C3SEL_0                (0x1UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x00000100 */
-#define RCC_CCIPR3_I2C3SEL_1                (0x2UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x00000200 */
+#define RCC_CCIPR3_I2C3SEL_0                (0x1UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x00000040 */
+#define RCC_CCIPR3_I2C3SEL_1                (0x2UL << RCC_CCIPR3_I2C3SEL_Pos)        /*!< 0x00000080 */
 #define RCC_CCIPR3_LPTIM34SEL_Pos           (8UL)
-#define RCC_CCIPR3_LPTIM34SEL_Msk           (0x3UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x0000E000 */
+#define RCC_CCIPR3_LPTIM34SEL_Msk           (0x3UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x00000300 */
 #define RCC_CCIPR3_LPTIM34SEL               RCC_CCIPR3_LPTIM34SEL_Msk                /*!< LPTIM34SEL[1:0]: bits (LPTIM3 and LPTIM4 Kernel Clock Source Selection) */
-#define RCC_CCIPR3_LPTIM34SEL_0             (0x1UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x00002000 */
-#define RCC_CCIPR3_LPTIM34SEL_1             (0x2UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x00004000 */
+#define RCC_CCIPR3_LPTIM34SEL_0             (0x1UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x00000100 */
+#define RCC_CCIPR3_LPTIM34SEL_1             (0x2UL << RCC_CCIPR3_LPTIM34SEL_Pos)     /*!< 0x00000200 */
 #define RCC_CCIPR3_LPTIM1SEL_Pos            (10UL)
-#define RCC_CCIPR3_LPTIM1SEL_Msk            (0x3UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x0000E000 */
+#define RCC_CCIPR3_LPTIM1SEL_Msk            (0x3UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x00000C00 */
 #define RCC_CCIPR3_LPTIM1SEL                RCC_CCIPR3_LPTIM1SEL_Msk                 /*!< LPTIM1SEL[1:0]: bits (LPTIM1 Kernel Clock Source Selection) */
-#define RCC_CCIPR3_LPTIM1SEL_0              (0x1UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x00002000 */
-#define RCC_CCIPR3_LPTIM1SEL_1              (0x2UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x00004000 */
+#define RCC_CCIPR3_LPTIM1SEL_0              (0x1UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x00000400 */
+#define RCC_CCIPR3_LPTIM1SEL_1              (0x2UL << RCC_CCIPR3_LPTIM1SEL_Pos)      /*!< 0x00000800 */
 #define RCC_CCIPR3_ADCDACSEL_Pos            (12UL)
-#define RCC_CCIPR3_ADCDACSEL_Msk            (0x7UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00030000 */
+#define RCC_CCIPR3_ADCDACSEL_Msk            (0x7UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00007000 */
 #define RCC_CCIPR3_ADCDACSEL                RCC_CCIPR3_ADCDACSEL_Msk                 /*!< ADCDACSEL[2:0]: bits (ADC1, ADC4 and DAC1 Kernel Clock Source Selection) */
-#define RCC_CCIPR3_ADCDACSEL_0              (0x1UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00010000 */
-#define RCC_CCIPR3_ADCDACSEL_1              (0x2UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00020000 */
-#define RCC_CCIPR3_ADCDACSEL_2              (0x4UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00040000 */
+#define RCC_CCIPR3_ADCDACSEL_0              (0x1UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00001000 */
+#define RCC_CCIPR3_ADCDACSEL_1              (0x2UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00002000 */
+#define RCC_CCIPR3_ADCDACSEL_2              (0x4UL << RCC_CCIPR3_ADCDACSEL_Pos)      /*!< 0x00004000 */
 #define RCC_CCIPR3_DAC1SEL_Pos              (15UL)
-#define RCC_CCIPR3_DAC1SEL_Msk              (0x1UL << RCC_CCIPR3_DAC1SEL_Pos)        /*!< 0x00300000 */
+#define RCC_CCIPR3_DAC1SEL_Msk              (0x1UL << RCC_CCIPR3_DAC1SEL_Pos)        /*!< 0x00008000 */
 #define RCC_CCIPR3_DAC1SEL                  RCC_CCIPR3_DAC1SEL_Msk                   /*!< DAC1 Sample & Hold Clock Source Selection */
 #define RCC_CCIPR3_ADF1SEL_Pos              (16UL)
 #define RCC_CCIPR3_ADF1SEL_Msk              (0x7UL << RCC_CCIPR3_ADF1SEL_Pos)       /*!< 0x00070000 */
