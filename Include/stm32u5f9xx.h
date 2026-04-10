@@ -5855,7 +5855,7 @@ typedef struct
 #define RNG_HTCR_HTCFG_Msk                  (0xFFFFFFFFUL << RNG_HTCR_HTCFG_Pos)    /*!< 0xFFFFFFFF */
 #define RNG_HTCR_HTCFG                      RNG_HTCR_HTCFG_Msk
 /********************  RNG Nist Compliance Values  *******************/
-#define RNG_CR_NIST_VALUE                   (0x00F10F00U)
+#define RNG_CR_NIST_VALUE                   (0x00F11F00U)
 #define RNG_HTCR_NIST_VALUE                 (0xA715U)
 #define RNG_NSCR_NIST_VALUE                 (0x9049U)
 
