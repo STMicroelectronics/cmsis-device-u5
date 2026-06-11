@@ -3100,11 +3100,11 @@ typedef struct
 
 /* Specific ADC4 */
 #define ADC4_CFGR1_EXTSEL_Pos               (6UL)
-#define ADC4_CFGR1_EXTSEL_Msk               (0x7UL << ADC4_CFGR1_EXTSEL_Pos)    /*!< 0x000003E0 */
+#define ADC4_CFGR1_EXTSEL_Msk               (0x7UL << ADC4_CFGR1_EXTSEL_Pos)    /*!< 0x000001C0 */
 #define ADC4_CFGR1_EXTSEL                   ADC4_CFGR1_EXTSEL_Msk               /*!< ADC External trigger selection for regular group */
-#define ADC4_CFGR1_EXTSEL_0                 (0x01UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000020 */
-#define ADC4_CFGR1_EXTSEL_1                 (0x02UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000040 */
-#define ADC4_CFGR1_EXTSEL_2                 (0x04UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000080 */
+#define ADC4_CFGR1_EXTSEL_0                 (0x01UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000040 */
+#define ADC4_CFGR1_EXTSEL_1                 (0x02UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000080 */
+#define ADC4_CFGR1_EXTSEL_2                 (0x04UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000100 */
 
 #define ADC4_CFGR1_CHSELRMOD_Pos           (21UL)
 #define ADC4_CFGR1_CHSELRMOD_Msk           (0x1UL << ADC4_CFGR1_CHSELRMOD_Pos)  /*!< 0x00200000 */
@@ -19647,9 +19647,6 @@ typedef struct
 #define I2C_CR1_ANFOFF_Pos                  (12UL)
 #define I2C_CR1_ANFOFF_Msk                  (0x1UL << I2C_CR1_ANFOFF_Pos)           /*!< 0x00001000 */
 #define I2C_CR1_ANFOFF                      I2C_CR1_ANFOFF_Msk                      /*!< Analog noise filter OFF */
-#define I2C_CR1_SWRST_Pos                   (13UL)
-#define I2C_CR1_SWRST_Msk                   (0x1UL << I2C_CR1_SWRST_Pos)            /*!< 0x00002000 */
-#define I2C_CR1_SWRST                       I2C_CR1_SWRST_Msk                       /*!< Software reset */
 #define I2C_CR1_TXDMAEN_Pos                 (14UL)
 #define I2C_CR1_TXDMAEN_Msk                 (0x1UL << I2C_CR1_TXDMAEN_Pos)          /*!< 0x00004000 */
 #define I2C_CR1_TXDMAEN                     I2C_CR1_TXDMAEN_Msk                     /*!< DMA transmission requests enable */

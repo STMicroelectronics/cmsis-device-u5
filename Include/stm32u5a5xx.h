@@ -3850,11 +3850,11 @@ typedef struct
 
 /* Specific ADC4 */
 #define ADC4_CFGR1_EXTSEL_Pos               (6UL)
-#define ADC4_CFGR1_EXTSEL_Msk               (0x7UL << ADC4_CFGR1_EXTSEL_Pos)    /*!< 0x000003E0 */
+#define ADC4_CFGR1_EXTSEL_Msk               (0x7UL << ADC4_CFGR1_EXTSEL_Pos)    /*!< 0x000001C0 */
 #define ADC4_CFGR1_EXTSEL                   ADC4_CFGR1_EXTSEL_Msk               /*!< ADC External trigger selection for regular group */
-#define ADC4_CFGR1_EXTSEL_0                 (0x01UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000020 */
-#define ADC4_CFGR1_EXTSEL_1                 (0x02UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000040 */
-#define ADC4_CFGR1_EXTSEL_2                 (0x04UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000080 */
+#define ADC4_CFGR1_EXTSEL_0                 (0x01UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000040 */
+#define ADC4_CFGR1_EXTSEL_1                 (0x02UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000080 */
+#define ADC4_CFGR1_EXTSEL_2                 (0x04UL << ADC4_CFGR1_EXTSEL_Pos)   /*!< 0x00000100 */
 
 #define ADC4_CFGR1_CHSELRMOD_Pos           (21UL)
 #define ADC4_CFGR1_CHSELRMOD_Msk           (0x1UL << ADC4_CFGR1_CHSELRMOD_Pos)  /*!< 0x00200000 */
@@ -23421,7 +23421,7 @@ typedef struct
 #define USB_OTG_GRXSTSP_DPID_Msk                 (0x3U << USB_OTG_GRXSTSP_DPID_Pos)            /*!< 0x00018000 */
 #define USB_OTG_GRXSTSP_DPID                     USB_OTG_GRXSTSP_DPID_Msk                      /*!< Data PID */
 #define USB_OTG_GRXSTSP_PKTSTS_Pos               (17UL)
-#define USB_OTG_GRXSTSP_PKTSTS_Msk               (0xFU << USB_OTG_GRXSTSP_PKTSTS_Pos)          /*!< 0x001E0000 */
+#define USB_OTG_GRXSTSP_PKTSTS_Msk               (0xFUL << USB_OTG_GRXSTSP_PKTSTS_Pos)         /*!< 0x001E0000 */
 #define USB_OTG_GRXSTSP_PKTSTS                   USB_OTG_GRXSTSP_PKTSTS_Msk                    /*!< Packet status */
 #define USB_OTG_GRXSTSP_FRMNUM_Pos               (21UL)
 #define USB_OTG_GRXSTSP_FRMNUM_Msk               (0xFU << USB_OTG_GRXSTSP_FRMNUM_Pos)          /*!< 0x01E00000 */
@@ -23654,10 +23654,10 @@ typedef struct
 
 /********************  Bit definition for USB_OTG_GLPMCFG register  ********************/
 #define USB_OTG_GLPMCFG_LPMEN_Pos                (0UL)
-#define USB_OTG_GLPMCFG_LPMEN_Msk                (0x1U << USB_OTG_GLPMCFG_LPMEN_Pos)          /*!< 0x00000001 */
+#define USB_OTG_GLPMCFG_LPMEN_Msk                (0x1UL << USB_OTG_GLPMCFG_LPMEN_Pos)         /*!< 0x00000001 */
 #define USB_OTG_GLPMCFG_LPMEN                    USB_OTG_GLPMCFG_LPMEN_Msk                    /* LPM support enable  */
 #define USB_OTG_GLPMCFG_LPMACK_Pos               (1UL)
-#define USB_OTG_GLPMCFG_LPMACK_Msk               (0x1U << USB_OTG_GLPMCFG_LPMACK_Pos)         /*!< 0x00000002 */
+#define USB_OTG_GLPMCFG_LPMACK_Msk               (0x1UL << USB_OTG_GLPMCFG_LPMACK_Pos)        /*!< 0x00000002 */
 #define USB_OTG_GLPMCFG_LPMACK                   USB_OTG_GLPMCFG_LPMACK_Msk                   /* LPM Token acknowledge enable*/
 #define USB_OTG_GLPMCFG_BESL_Pos                 (2UL)
 #define USB_OTG_GLPMCFG_BESL_Msk                 (0xFU << USB_OTG_GLPMCFG_BESL_Pos)           /*!< 0x0000003C */
@@ -23696,7 +23696,7 @@ typedef struct
 #define USB_OTG_GLPMCFG_LPMRCNTSTS_Msk           (0x7U << USB_OTG_GLPMCFG_LPMRCNTSTS_Pos)     /*!< 0x0E000000 */
 #define USB_OTG_GLPMCFG_LPMRCNTSTS               USB_OTG_GLPMCFG_LPMRCNTSTS_Msk               /* LPM retry count status */
 #define USB_OTG_GLPMCFG_ENBESL_Pos               (28UL)
-#define USB_OTG_GLPMCFG_ENBESL_Msk               (0x1U << USB_OTG_GLPMCFG_ENBESL_Pos)         /*!< 0x10000000 */
+#define USB_OTG_GLPMCFG_ENBESL_Msk               (0x1UL << USB_OTG_GLPMCFG_ENBESL_Pos)        /*!< 0x10000000 */
 #define USB_OTG_GLPMCFG_ENBESL                   USB_OTG_GLPMCFG_ENBESL_Msk                   /* Enable best effort service latency */
 
 /********************  Bit definition for USB_OTG_DIEPEACHMSK1 register  ********************/
@@ -24752,9 +24752,6 @@ typedef struct
 #define I2C_CR1_ANFOFF_Pos                  (12UL)
 #define I2C_CR1_ANFOFF_Msk                  (0x1UL << I2C_CR1_ANFOFF_Pos)           /*!< 0x00001000 */
 #define I2C_CR1_ANFOFF                      I2C_CR1_ANFOFF_Msk                      /*!< Analog noise filter OFF */
-#define I2C_CR1_SWRST_Pos                   (13UL)
-#define I2C_CR1_SWRST_Msk                   (0x1UL << I2C_CR1_SWRST_Pos)            /*!< 0x00002000 */
-#define I2C_CR1_SWRST                       I2C_CR1_SWRST_Msk                       /*!< Software reset */
 #define I2C_CR1_TXDMAEN_Pos                 (14UL)
 #define I2C_CR1_TXDMAEN_Msk                 (0x1UL << I2C_CR1_TXDMAEN_Pos)          /*!< 0x00004000 */
 #define I2C_CR1_TXDMAEN                     I2C_CR1_TXDMAEN_Msk                     /*!< DMA transmission requests enable */
